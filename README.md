@@ -1,12 +1,6 @@
 [![.NET Core](https://github.com/ardalis/CleanArchitecture/workflows/.NET%20Core/badge.svg)](https://dotnet.microsoft.com/en-us/apps/aspnet)
 [![Ardalis.CleanArchitecture.Template on NuGet](https://img.shields.io/nuget/v/Ardalis.CleanArchitecture.Template?label=Ardalis.CleanArchitecture.Template)](https://www.nuget.org/packages/Ardalis.CleanArchitecture.Template/)
 
-<a href="https://twitter.com/intent/follow?screen_name=ardalis">
-    <img src="https://img.shields.io/twitter/follow/ardalis.svg?label=Follow%20@ardalis" alt="Follow @ardalis" />
-</a> &nbsp; <a href="https://twitter.com/intent/follow?screen_name=nimblepros">
-    <img src="https://img.shields.io/twitter/follow/nimblepros.svg?label=Follow%20@nimblepros" alt="Follow @nimblepros" />
-</a>
-
 # Introductions
 
 This is a Back-End test project for a Sr. DotNet Developer job opening at [Smoothstack](https://smoothstack.com/). It is an ASP.NET Core project based off of [Clean Architecture](https://8thlight.com/blog/uncle-bob/2012/08/13/the-clean-architecture.html). A Domain Driven, loosely-coupled and dependency-inverted design architecture.
