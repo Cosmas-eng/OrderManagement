@@ -1,0 +1,28 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+@host=https://localhost
+@port=57679
+
+// Order Analytics API
+GET {{host}}:{{port}}/Orders/Analytics
+
+###
+
+// Update order status
+@id_to_patch=1
+PATCH {{host}}:{{port}}/Orders/{{id_to_patch}}/UpdateStatus
+Content-Type: application/json
+{
+  "status": "Confirmed"
+}
+
+###
+
+// Apply discount to an order
+@id_to_update=2
+PATCH {{host}}:{{port}}/Orders/{{id_to_update}}/ApplyDiscount
+Content-Type: application/json
+{
+  "OrderId": 2
+}
+
+###
