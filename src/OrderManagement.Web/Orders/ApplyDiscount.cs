@@ -11,7 +11,7 @@ public class ApplyDiscount(IMediator mediator) : Endpoint<ApplyDiscountRequest, 
     Summary(s =>
     {
       s.Summary = "Apply a discount to an order.";
-      s.Description = "Applies a discount to an existing order based on the customer segment";
+      s.Description = "Applies a discount to an existing order based on the customer segment and only applies when the order status is Pending";
       s.ExampleRequest = new ApplyDiscountRequest
       {
         OrderId = 1

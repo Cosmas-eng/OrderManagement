@@ -11,7 +11,17 @@ public class UpdateStatus(IMediator mediator) : Endpoint<UpdateOrderStatusReques
     Summary(s =>
     {
       s.Summary = "Update the status of an order.";
-      s.Description = "Updates the status of an order to a new status.";
+      s.Description = """
+        Updates the status of an order to a new status.
+        Valid status values are: Pending, Confirmed, Shipped, Delivered, Cancelled.
+
+        State transitions:
+        - Pending → Confirmed, Cancelled
+        - Confirmed → Shipped, Cancelled
+        - Shipped → Delivered
+        - Delivered → (no further transitions)
+        - Cancelled → (no further transitions)
+        """;
       s.ExampleRequest = new UpdateOrderStatusRequest
       {
           OrderId = 1,
