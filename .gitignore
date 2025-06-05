@@ -367,3 +367,5 @@ log*.txt
 
 # Sqlite Database
 database.sqlite
+database.sqlite-wal
+database.sqlite-shm
